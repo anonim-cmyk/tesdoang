@@ -1,10 +1,9 @@
-import React from "react";
 import HTMLFlipBook from "react-pageflip";
 
 export default function Scrapbook() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-pink-100 via-purple-100 to-blue-100 overflow-x-auto">
-      <div className="scale-[0.9] sm:scale-100 origin-top">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-tr from-pink-100 via-purple-100 to-blue-100">
+      <div className="mx-auto scale-[0.6] sm:scale-100 origin-top">
         {" "}
         {/* 🔑 zoom out di mobile */}
         <HTMLFlipBook
