@@ -6,7 +6,7 @@ function Scrapbook() {
       <HTMLFlipBook
         width={400}
         height={500}
-        className="shadow-2xl rounded-lg"
+        className="shadow-2xl rounded-lg w-[90vw] sm:w-[400px]"
         showCover
       >
         {/* Halaman 1 */}
