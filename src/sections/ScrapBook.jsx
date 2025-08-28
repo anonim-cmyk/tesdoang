@@ -2,25 +2,19 @@ import HTMLFlipBook from "react-pageflip";
 
 function Scrapbook() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-200 px-4">
+    <div className="flex justify-center items-center min-h-screen bg-gray-200">
       <HTMLFlipBook
-        width={300}
-        height={400}
-        size="stretch"
-        minWidth={250}
-        maxWidth={400}
-        minHeight={350}
-        maxHeight={500}
-        className="shadow-2xl rounded-lg"
+        width={400}
+        size="fixed"
+        height={500}
+        className="shadow-2xl rounded-lg w-[90vw] sm:w-[400px]"
         showCover
       >
         {/* Halaman 1 */}
-        <div className="relative w-full h-full bg-[#f5e7d8]">
+        <div className="relative w-full h-full bg-[#f5e7d8] p-4">
           {/* Teks Utama */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-2">
-            <h1 className="text-3xl font-serif font-bold">
-              Happy Birthday 24th
-            </h1>
+            <h1 className="text-3xl font-serif font-bold">Happy Birthday</h1>
             <h2 className="text-2xl font-serif font-semibold">My Love</h2>
             <h2 className="text-2xl font-serif font-semibold">
               Rahmalia El Vanya
@@ -64,7 +58,7 @@ function Scrapbook() {
         </div>
 
         {/* Halaman 2 */}
-        <div className="text-center bg-[#f5e7d8] relative h-full w-full overflow-hidden">
+        <div className="text-center bg-[#f5e7d8] relative h-full w-full overflow-hidden p-4">
           <h1 className="text-3xl font-serif font-bold inline-block">Lovely</h1>
           <div className="flex justify-center items-center h-full -translate-y-11">
             {/* Border luar (coklat gelap) */}
@@ -138,7 +132,7 @@ function Scrapbook() {
         </div>
 
         {/* Halaman 3 */}
-        <div className="flex items-center justify-center p-8 bg-[#f5e7d8]">
+        <div className="flex items-center justify-center p-4 bg-[#f5e7d8]">
           <div className="flex flex-col justify-center items-center h-full space-y-8">
             <h1 className="text-3xl font-serif font-bold text-center">
               My wish for u
