@@ -2,7 +2,7 @@ import HTMLFlipBook from "react-pageflip";
 
 function Scrapbook() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-200">
+    <div className="flex justify-center items-center min-h-screen bg-gray-200 p-4">
       <HTMLFlipBook
         width={400}
         height={500}
