@@ -2,18 +2,25 @@ import HTMLFlipBook from "react-pageflip";
 
 function Scrapbook() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-200 p-8">
+    <div className="flex justify-center items-center min-h-screen bg-gray-200 px-4">
       <HTMLFlipBook
-        width={400}
-        height={500}
-        className="shadow-2xl rounded-lg w-[90vw] sm:w-[400px]"
+        width={300}
+        height={400}
+        size="stretch"
+        minWidth={250}
+        maxWidth={400}
+        minHeight={350}
+        maxHeight={500}
+        className="shadow-2xl rounded-lg"
         showCover
       >
         {/* Halaman 1 */}
         <div className="relative w-full h-full bg-[#f5e7d8]">
           {/* Teks Utama */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-2">
-            <h1 className="text-3xl font-serif font-bold">Happy Birthday</h1>
+            <h1 className="text-3xl font-serif font-bold">
+              Happy Birthday 24th
+            </h1>
             <h2 className="text-2xl font-serif font-semibold">My Love</h2>
             <h2 className="text-2xl font-serif font-semibold">
               Rahmalia El Vanya
