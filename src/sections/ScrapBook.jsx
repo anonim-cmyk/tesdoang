@@ -2,7 +2,7 @@ import HTMLFlipBook from "react-pageflip";
 
 function Scrapbook() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-200 p-4">
+    <div className="flex justify-center items-center min-h-screen bg-gray-200 p-8">
       <HTMLFlipBook
         width={400}
         height={500}
@@ -13,9 +13,7 @@ function Scrapbook() {
         <div className="relative w-full h-full bg-[#f5e7d8]">
           {/* Teks Utama */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-2">
-            <h1 className="text-3xl font-serif font-bold">
-              Happy Birthday 23th
-            </h1>
+            <h1 className="text-3xl font-serif font-bold">Happy Birthday</h1>
             <h2 className="text-2xl font-serif font-semibold">My Love</h2>
             <h2 className="text-2xl font-serif font-semibold">
               Rahmalia El Vanya
