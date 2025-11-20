@@ -6,42 +6,35 @@ function Scrapbook() {
   const audioRef = useRef(null);
   const bookRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
   const animatedPages = useRef(new Set());
 
   const animatedPage = (pageIndex) => {
     if (animatedPages.current.has(pageIndex)) return;
 
     const page = bookRef.current.pageFlip().getPage(pageIndex)?.element;
+    console.log(page);
+
     if (!page) return;
 
     const items = page.querySelectorAll(".animated-item");
 
     animatedPages.current.add(pageIndex);
     if (pageIndex % 2 === 0) {
-      gsap.fromTo(
-        items,
-        { opacity: 0, y: 50 }, // kondisi awal
-        {
-          opacity: 1,
-          y: 0,
-          stagger: 0.2,
-          duration: 1,
-          clearProps: "all",
-        }
-      );
+      gsap.to(items, {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        duration: 1,
+      });
     } else {
       // animasi B untuk halaman ganjil
-      gsap.fromTo(
-        items,
-        { opacity: 0, x: -100 }, // kondisi awal
-        {
-          opacity: 1,
-          x: 0,
-          stagger: 0.3,
-          duration: 1,
-          clearProps: "all",
-        }
-      );
+      gsap.to(items, {
+        opacity: 1,
+        x: 0,
+        stagger: 0.3,
+        duration: 1,
+      });
     }
   };
 
@@ -49,9 +42,16 @@ function Scrapbook() {
     const pageIndex = e.data;
     setCurrentPage(pageIndex);
     animatedPage(pageIndex);
+  };
 
-    if (audioRef && audioRef.current.paused) {
+  const toggleMusic = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
       audioRef.current.play();
+      setIsPlaying(true);
     }
   };
 
@@ -69,11 +69,33 @@ function Scrapbook() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+    };
+
+    audioEl.addEventListener("ended", handleEnded);
+    return () => {
+      audioEl.removeEventListener("ended", handleEnded);
+    };
+  }, []);
+
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-200 overflow-hidden">
-      <audio ref={audioRef} loop>
+    <div className="flex relative justify-center flex-col items-center min-h-screen bg-gray-200 overflow-hidden">
+      <audio ref={audioRef}>
         <source src="/music/music.mp3" type="audio/mpeg" />
       </audio>
+      <button
+        onClick={toggleMusic}
+        className={`btn px-4 py-2 bg-amber-900 text-white rounded-md absolute bottom-24 lg:bottom-4 lg:left-4 ${
+          isPlaying ? "hidden" : ""
+        }`}
+      >
+        Play Sound dlu ya
+      </button>
       <HTMLFlipBook
         width={350}
         height={500}
@@ -258,13 +280,13 @@ function Scrapbook() {
               className="animated-item w-14 h-14 absolute right-10 bottom-0 -translate-y-6"
             />
             {/* Lapisan luar (putih) */}
-            <div className="p-2 bg-yellow-900 w-48 h-64">
-              {/* Lapisan dalam (coklat/amber) */}
-              <div className="relative border-2 border-white w-full h-full">
+            <div className="p-2 bg-yellow-900 w-48 h-64 relative">
+              <div className="border-2 border-white w-full h-full relative">
                 <img
                   src="/images/image.png"
                   alt="img"
-                  className="animated-item absolute top-1/2 w-36 h-48 -translate-y-1/2 left-1/2 -translate-x-1/2 flex items-center justify-center"
+                  className="animated-item w-36 h-48 border border-red-500 
+                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
                 />
               </div>
             </div>
