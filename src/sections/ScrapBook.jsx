@@ -18,14 +18,11 @@ function Scrapbook() {
 
     setTimeout(() => {
       setVisible(true); // <-- BUKAN render ulang flipbook, hanya fade-in
-      animatedPage(0);
     }, 50);
   };
 
   const handleInit = () => {
-    setTimeout(() => {
-      animatedPage(0);
-    }, 250); // beri waktu DOM siap
+    setTimeout(() => {}, 250); // beri waktu DOM siap
   };
 
   const animatedPage = (pageIndex) => {
@@ -58,6 +55,13 @@ function Scrapbook() {
   const handleFlip = (e) => {
     const pageIndex = e.data;
     setCurrentPage(pageIndex);
+
+    if (pageIndex === 0) {
+      setTimeout(() => {
+        animatedPage(0);
+      }, 50);
+    }
+
     animatedPage(pageIndex);
   };
 
@@ -330,11 +334,6 @@ function Scrapbook() {
                 </div>
               </div>
             </div>
-            <img
-              src="/images/bunga-kecil.png"
-              alt="bunga"
-              className="animated-item w-14 h-14 absolute right-15 top-1/2 -translate-y-32"
-            />
             <div className="absolute right-0 bottom-0 flex justify-center items-center p-5">
               <div className="p-2 bg-yellow-900 w-42 h-52">
                 <div className="relative border-2 border-white w-full h-full">
@@ -349,7 +348,12 @@ function Scrapbook() {
             <img
               src="/images/bunga-kecil.png"
               alt="bunga"
-              className="animated-item w-14 h-14 absolute left-15 top-1/2 translate-y-14"
+              className="animated-item w-14 h-14 absolute right-15 top-[100px]"
+            />
+            <img
+              src="/images/bunga-kecil.png"
+              alt="bunga"
+              className="animated-item w-14 h-14 absolute left-15 top-1/2"
             />
             <img
               src="/images/bunga-dua.png"
@@ -709,8 +713,8 @@ function Scrapbook() {
           {/* Halaman 17 */}
           <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen px-8">
             <div className="flex items-center justify-center h-full">
-              <div className="h-auto bg-amber-600 rounded-md p-4">
-                <p className="animated-item text-md text-center font-serif font-semibold">
+              <div className="h-auto bg-yellow-900 rounded-md p-4">
+                <p className="animated-item text-md text-center text-white font-serif font-semibold">
                   Semoga kita selalu menjadi pasangan yang memiliki tujuan yang
                   sama, saling mencintai, menyayangi, dan berjuang untuk hal hal
                   yang akan datang nanti sampai kita berdua bisa mewujudkan
