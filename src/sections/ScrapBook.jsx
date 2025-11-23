@@ -767,24 +767,29 @@ function Scrapbook() {
           </div>
 
           {/* Halaman 19 */}
-          <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen p-6 flex items-center justify-center">
-            <div className="animated-item flex flex-col items-center text-center gap-6">
+          <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen flex items-center justify-center">
+            <div className="animated-item flex flex-col items-center justify-center text-center gap-6 h-full">
               {/* Title */}
               <div className="flex flex-col gap-1">
-                <span className="text-3xl font-serif tracking-widest uppercase text-amber-900">
+                <span className="text-md font-serif tracking-widest uppercase">
                   Your Beloved Boyfriend
                 </span>
-                <span className="text-4xl font-serif font-semibold text-amber-800">
+                <span className="text-2xl font-serif font-semibold uppercase">
                   Ilham Syahdan
                 </span>
               </div>
 
+              <img
+                src="/images/image-bintang.png"
+                alt="bintang"
+                className="animated-item absolute bottom-0 left-0"
+              />
               {/* Image Card */}
               <div className="rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] overflow-hidden bg-white">
                 <img
                   src="/images/A-1.jpg"
                   alt="image"
-                  className="w-72 h-72 object-cover object-center saturate-110 contrast-110"
+                  className="w-62 h-62 object-cover object-center saturate-110 contrast-110"
                 />
               </div>
             </div>
