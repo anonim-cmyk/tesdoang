@@ -65,16 +65,16 @@ function Scrapbook() {
     animatedPage(pageIndex);
   };
 
-  const toggleMusic = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current.play();
-      setIsPlaying(true);
-    }
-  };
+  // const toggleMusic = () => {
+  //   if (!audioRef.current) return;
+  //   if (isPlaying) {
+  //     audioRef.current.pause();
+  //     setIsPlaying(false);
+  //   } else {
+  //     audioRef.current.play();
+  //     setIsPlaying(true);
+  //   }
+  // };
 
   useEffect(() => {
     const audioEl = audioRef.current;
@@ -198,7 +198,7 @@ function Scrapbook() {
               <div className="rounded-full border-[16px] border-[#4b2e2e]">
                 <div className="rounded-full border-[14px] border-[#a9745b]">
                   <img
-                    src="/images/image.png"
+                    src="/images/R-2.jpg"
                     alt="image"
                     className="animated-item w-52 h-52 rounded-full object-cover"
                   />
@@ -308,13 +308,13 @@ function Scrapbook() {
                 className="animated-item w-14 h-14 absolute right-10 bottom-0 -translate-y-6"
               />
               {/* Lapisan luar (putih) */}
-              <div className="p-2 bg-yellow-900 w-48 h-64 relative">
-                <div className="border-2 border-white w-full h-full relative">
+              <div className="p-2 bg-yellow-900 w-48 h-64 relative rounded-md">
+                <div className="border-2 border-white w-full h-full relative rounded-md">
                   <img
-                    src="/images/image.png"
+                    src="/images/R-1.jpg"
                     alt="img"
-                    className="animated-item w-36 h-48 border border-red-500 
-                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                    className="animated-item w-36 h-52
+                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-md"
                   />
                 </div>
               </div>
@@ -324,10 +324,10 @@ function Scrapbook() {
           {/* Halaman 5 */}
           <div className="page flex flex-col items-center justify-center bg-[#f5e7d8] relative overflow-hidden">
             <div className="absolute left-0 flex justify-center items-center p-5">
-              <div className="relative p-2 bg-yellow-900 w-42 h-52">
-                <div className="relative border-2 border-white w-full h-full">
+              <div className="relative p-2 bg-yellow-900 w-42 h-52 rounded-md">
+                <div className="relative border-2 border-white w-full h-full rounded-md">
                   <img
-                    src="/images/image.png"
+                    src="/images/R-3.jpg"
                     alt="img"
                     className="animated-item absolute top-1/2 w-32 h-42 -translate-y-1/2 left-1/2 -translate-x-1/2"
                   />
@@ -335,8 +335,8 @@ function Scrapbook() {
               </div>
             </div>
             <div className="absolute right-0 bottom-0 flex justify-center items-center p-5">
-              <div className="p-2 bg-yellow-900 w-42 h-52">
-                <div className="relative border-2 border-white w-full h-full">
+              <div className="p-2 bg-yellow-900 w-42 h-52 rounded-md">
+                <div className="relative border-2 border-white w-full h-full rounded-md">
                   <img
                     src="/images/image.png"
                     alt="img"
@@ -471,7 +471,7 @@ function Scrapbook() {
             <div className="flex flex-col items-center justify-center h-full gap-6">
               <div className="w-64 h-64 border-2 border-yellow-800 rounded-2xl shadow-2xl flex justify-center items-center">
                 <img
-                  src="/images/images2.jpg"
+                  src="/images/A-R-2.jpg"
                   alt="img"
                   className="animated-item w-52 h-52 object-cover rounded-md"
                 />
@@ -517,12 +517,12 @@ function Scrapbook() {
                   <div className="w-[272px] h-[272px] bg-amber-800 rounded-full absolute left-9 -translate-y-2" />
 
                   {/* Wrapper posisi */}
-                  <div className="absolute -right-2 -translate-x-10 -rotate-[25deg]">
+                  <div className="absolute -right-2 -translate-x-10">
                     {/* Img di dalam wrapper khusus animasi */}
                     <img
-                      src="/images/image.png"
+                      src="/images/R-4.jpg"
                       alt="image"
-                      className="animated-item w-64 h-64 rounded-full object-cover"
+                      className="animated-item w-64 h-64 rounded-full object-cover object-left-top"
                     />
                   </div>
                 </div>
@@ -565,22 +565,21 @@ function Scrapbook() {
               />
             </h1>
             <div className="w-full h-[338px] grid grid-cols-2 place-items-center">
-              <div className="p-2 bg-yellow-900 w-36 h-48 -translate-y-15">
-                <div className="relative border-2 border-white w-full h-full">
+              <div className="p-2 bg-yellow-900  w-56 h-40 absolute top-1/2 -translate-y-28 left-2 rounded-md">
+                <div className="border-2 border-white w-full h-full rounded-md">
                   <img
                     src="/images/images-3.jpg"
                     alt="img"
-                    className="animated-item object-fill w-32 h-42"
+                    className="animated-item object-cover w-full h-full object-center"
                   />
                 </div>
               </div>
-
-              <div className="p-2 bg-yellow-900 w-36 h-48">
-                <div className="relative border-2 border-white w-full h-full">
+              <div className="p-2 bg-yellow-900 w-56 h-40 absolute bottom-4 right-2 rounded-md">
+                <div className="border-2 border-white w-full h-full overflow-hidden rounded-md">
                   <img
-                    src="/images/images-3.jpg"
+                    src="/images/A-R-3.jpg"
                     alt="img"
-                    className="animated-item object-fill w-32 h-42"
+                    className="animated-item object-cover w-full h-full object-center"
                   />
                 </div>
               </div>
@@ -768,31 +767,97 @@ function Scrapbook() {
           </div>
 
           {/* Halaman 19 */}
-          <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen p-4">
-            <div className="w-full">
-              <div className="animated-item flex flex-col justify-center text-2xl font-serif uppercase text-center gap-4">
-                <span>Your Beloved Boyfriend</span>
-                <span>Ilham Syahdan</span>
+          <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen p-6 flex items-center justify-center">
+            <div className="animated-item flex flex-col items-center text-center gap-6">
+              {/* Title */}
+              <div className="flex flex-col gap-1">
+                <span className="text-3xl font-serif tracking-widest uppercase text-amber-900">
+                  Your Beloved Boyfriend
+                </span>
+                <span className="text-4xl font-serif font-semibold text-amber-800">
+                  Ilham Syahdan
+                </span>
+              </div>
+
+              {/* Image Card */}
+              <div className="rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] overflow-hidden bg-white">
                 <img
-                  src="/images/image.png"
+                  src="/images/A-1.jpg"
                   alt="image"
-                  className="animated-item"
+                  className="w-72 h-72 object-cover object-center saturate-110 contrast-110"
                 />
               </div>
             </div>
           </div>
 
           {/* Halaman 20 */}
-          <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen p-4">
-            <div className="flex flex-col items-center justify-center h-full">
-              <div className="border-8 border-white rounded-full">
-                <img
-                  src="/images/image.png"
-                  alt="images"
-                  className="animated-item w-64 h-64 object-cover rounded-full"
-                />
+          <div className="page bg-[#f5e7d8] overflow-hidden">
+            <div className="relative flex flex-col gap-4 justify-center items-center h-full">
+              <div className="rounded-full border-[16px] border-[#4b2e2e]">
+                <div className="rounded-full border-[14px] border-[#a9745b]">
+                  <img
+                    src="/images/R-7.jpg"
+                    alt="image"
+                    className="animated-item w-52 h-52 rounded-full object-cover"
+                  />
+                </div>
               </div>
             </div>
+            <img
+              src="/images/daun.png"
+              alt="daun"
+              className="animated-item w-16 h-16 absolute top-1/2 -translate-y-1/2 -left-2"
+            />
+            <img
+              src="/images/plus.svg"
+              alt="plus"
+              className="animated-item w-16 h-16 absolute bottom-1/6 left-4 -translate-y-2"
+            />
+            <img
+              src="/images/plus.svg"
+              alt="plus"
+              className="animated-item w-5 h-5 absolute bottom-1/3 left-5 translate-y-6"
+            />
+            <img
+              src="/images/plus.svg"
+              alt="plus"
+              className="animated-item w-5 h-5 absolute bottom-0 left-5 -translate-y-20"
+            />
+            <img
+              src="/images/plus.svg"
+              alt="plus"
+              className="animated-item w-5 h-5 absolute bottom-0 left-10 -translate-y-16"
+            />
+            <img
+              src="/images/plus.svg"
+              alt="plus"
+              className="animated-item w-10 h-10 absolute bottom-0 left-16 -translate-y-16"
+            />
+            <img
+              src="/images/play.png"
+              alt="play"
+              className="animated-item w-28 h-28 absolute top-0 translate-y-16 -left-4 rotate-45"
+            />
+            <img
+              src="/images/garis.png"
+              alt="garis"
+              className="animated-item w-28 h-28 absolute bottom-2 left-1/2 -translate-x-1/2"
+            />
+            <img
+              src="/images/gallery.png"
+              alt="garis"
+              className="animated-item w-28 h-32 absolute bottom-4 right-0 translate-x-16 rotate-[22deg]"
+            />
+            <img
+              src="/images/bunga-belok.png"
+              alt="garis"
+              className="animated-item w-32 h-32 absolute bottom-16 -translate-y-16 -right-7 rotate-[20deg]"
+            />
+            <img
+              src="/images/love.png"
+              alt="garis"
+              className="animated-item w-24 h-24 absolute top-0 right-0 translate-y-16"
+            />
           </div>
 
           {/* Halaman 21 */}
