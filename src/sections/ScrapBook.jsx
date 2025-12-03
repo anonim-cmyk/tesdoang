@@ -273,9 +273,8 @@ function Scrapbook() {
                 kesehatan selalu terjaga, dan rezeki kamu makin lancar. Semoga
                 semua urusan kamu jadi lebih ringan, lebih mudah, dan kamu terus
                 ketemu hal-hal baik di sepanjang jalannya. Semoga juga kamu
-                selalu dikelilingi orang-orang yang tulus dan support kamu.
-                Bangga sama kamu, serius. Terus jadi diri sendiri ya. Proud of
-                you!
+                selalu dikelilingi orang-orang yang tulus dan support kamu,
+                bangga sama kamu. Terus jadi diri sendiri ya. Proud of you!
               </p>
             </div>
           </div>
@@ -530,19 +529,18 @@ function Scrapbook() {
           {/* Halaman 11 */}
           <div className="page flex flex-col items-center justify-center bg-[#f5e7d8] relative h-full w-full overflow-hidden">
             <div className="flex items-center justify-center h-full">
-              <p className="animated-item text-md text-center px-6 font-serif leading-relaxed">
-                Hai sayangg, teruslah berkembang dan melangkah maju. Kejar semua
-                apa yang kamu impikan, satu langkah tiap harinya pun sudah
-                berarti. Walaupun aku nggak selalu ada di dekatmu, aku selalu
-                bangga sama perjalananmu, terutama sama cara kamu bertahan dan
-                tetap berproses. Semoga tahun-tahunmu ke depan kamu lewati
-                dengan baik, penuh hal-hal baru yang bahkan belum pernah kamu
-                bayangkan sebelumnya. Semoga hidup selalu ngasih kamu pengalaman
-                yang mengejutkan, menenangkan, dan bikin kamu makin kuat. Semoga
-                hati dan pikiranmu selalu punya ruang yang cukup untuk tenang,
-                bahagia, dan merasa aman. Kamu layak dapat semua itu tanpa
-                batas.
-              </p>
+              {/* Frame/Bingkai */}
+              <div className="bg-yellow-800/20 border-4 border-yellow-800 p-4 rounded-2xl shadow-md max-w-md mx-4">
+                <p className="animated-item text-md text-center font-serif leading-relaxed text-yellow-900 font-semibold">
+                  Hai sayangg, teruslah berkembang dan melangkah maju. Kejar
+                  semua yang kamu impikan, satu langkah tiap harinya pun
+                  berarti. Walaupun aku nggak selalu ada di dekatmu, aku selalu
+                  bangga sama perjalananmu, terutama sama cara kamu bertahan dan
+                  tetap berproses. Semoga tahun-tahun ke depan kamu lewati
+                  dengan baik, banyak hal baik dan kejutan baru. Kamu layak
+                  dapat semua itu, tanpa batas.
+                </p>
+              </div>
             </div>
           </div>
 
