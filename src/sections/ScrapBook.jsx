@@ -269,9 +269,13 @@ function Scrapbook() {
                 My wish for u
               </h1>
               <p className="animated-item text-md text-center font-serif">
-                Semoga di hari ulang tahunmu ini, kamu panjang umurnya, sehat
-                selalu, lancar rezekinya, diberi kemudahan dalam segala urusan,
-                dan selalu dikelilingi orang baik, im proud of you!
+                Di ulang tahun kamu hari ini, semoga umur kamu makin panjang,
+                kesehatan selalu terjaga, dan rezeki kamu makin lancar. Semoga
+                semua urusan kamu jadi lebih ringan, lebih mudah, dan kamu terus
+                ketemu hal-hal baik di sepanjang jalannya. Semoga juga kamu
+                selalu dikelilingi orang-orang yang tulus dan support kamu.
+                Bangga sama kamu, serius. Terus jadi diri sendiri ya. Proud of
+                you!
               </p>
             </div>
           </div>
@@ -400,19 +404,18 @@ function Scrapbook() {
           {/* Halaman 7 */}
           <div className="page relative bg-[#f5e7d8] overflow-hidden p-4">
             <div className="flex flex-col items-center justify-center h-full gap-4">
-              <h1 className="animated-item text-2xl -rotate-12 font-header font-bold text-center">
+              <h1 className="animated-item text-4xl -rotate-12 font-header font-bold text-center">
                 Special <br /> Wishes
               </h1>
               <div className="relative w-full bg-yellow-800 p-3 text-center">
                 <div className="w-6 h-14 absolute bg-amber-950 top-0 -translate-y-5 -rotate-5" />
                 <div className="w-6 h-14 absolute bg-amber-950 top-0 left-10 -z-10 -translate-y-5 rotate-5" />
-                <p className="animated-item text-sm font-serif text-white z-10 relative">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Magni totam illo quibusdam expedita, architecto, voluptas
-                  voluptates fuga eum ab modi obcaecati aut rerum. Consequuntur
-                  fugit eligendi earum facilis neque ea. A veniam at optio
-                  placeat natus sapiente, ex totam? Nemo! Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. Hic quod deleniti a!
+                <p className="animated-item text-sm font-serif text-white z-10 relative px-5">
+                  Selama aku masih ada, kamu selalu punya orang yang bangga sama
+                  kamu, apa pun yang kamu usahakan. Kalau suatu saat kamu merasa
+                  nggak dihargai atau mungkin nggak disayang, inget aja kamu
+                  masih punya aku. Aku yang bakal tetap ada buat kamu, di momen
+                  baik maupun sulit. Aku ada, dan itu nggak bakal berubah.
                 </p>
               </div>
             </div>
@@ -441,19 +444,13 @@ function Scrapbook() {
               </h1>
 
               <div className="flex flex-col items-center justify-center mt-4 p-4 rounded-sm shadow-xl">
-                <p className="animated-item text-center text-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore omnis reiciendis atque voluptas explicabo id, enim
-                  sed voluptatum possimus maiores molestias alias, odio
-                  perferendis, pariatur in? Est odit magni nemo, mollitia
-                  assumenda corrupti veniam ex dolorem, inventore illo animi
-                  tenetur! Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Iusto unde pariatur autem! Quas nobis eveniet, quod
-                  itaque accusamus dicta excepturi expedita modi tempora libero,
-                  quisquam ut corrupti deleniti! Esse iste sunt fugit incidunt
-                  doloremque cumque nobis vel maiores maxime ut. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Molestias,
-                  temporibus.
+                <p className="animated-item text-center text-sm font-serif">
+                  Semoga semua hal baik yang sedang kamu usahakan suatu hari
+                  menghampirimu, semua itu berawal dari hati yang sepenuhnya
+                  tulus untuk meraih apapun itu tanpa membuat mu sakit, banyak
+                  harapan baik untukmu, semoga semua itu terjadi ya, doa terbaik
+                  untuk kamu ya, sekali lagi selamat bertambah usia ya sayangg,
+                  jangan lupa untuk selalu bersyukur di setiap harinya ya!
                 </p>
               </div>
             </div>
@@ -533,18 +530,18 @@ function Scrapbook() {
           {/* Halaman 11 */}
           <div className="page flex flex-col items-center justify-center bg-[#f5e7d8] relative h-full w-full overflow-hidden">
             <div className="flex items-center justify-center h-full">
-              <p className="animated-item text-sm text-center px-6">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatem, ipsam corporis quisquam, cum et totam quae minima
-                eius doloribus excepturi illo accusantium eligendi cumque omnis,
-                sint voluptates obcaecati? Ipsam, excepturi. Harum dolorum
-                recusandae maxime odio ullam quasi amet earum optio iste
-                repellendus? Quisquam tempore, tenetur consequatur incidunt
-                officia, earum error placeat nihil dolorum repellendus non
-                asperiores! Quos minus, facilis ratione maiores animi quisquam
-                voluptatibus architecto dolores iusto culpa fugit, odio
-                accusantium veniam! Facere ea quidem voluptates quaerat
-                reiciendis veritatis error. Officia
+              <p className="animated-item text-md text-center px-6 font-serif leading-relaxed">
+                Hai sayangg, teruslah berkembang dan melangkah maju. Kejar semua
+                apa yang kamu impikan, satu langkah tiap harinya pun sudah
+                berarti. Walaupun aku nggak selalu ada di dekatmu, aku selalu
+                bangga sama perjalananmu, terutama sama cara kamu bertahan dan
+                tetap berproses. Semoga tahun-tahunmu ke depan kamu lewati
+                dengan baik, penuh hal-hal baru yang bahkan belum pernah kamu
+                bayangkan sebelumnya. Semoga hidup selalu ngasih kamu pengalaman
+                yang mengejutkan, menenangkan, dan bikin kamu makin kuat. Semoga
+                hati dan pikiranmu selalu punya ruang yang cukup untuk tenang,
+                bahagia, dan merasa aman. Kamu layak dapat semua itu tanpa
+                batas.
               </p>
             </div>
           </div>
@@ -621,7 +618,7 @@ function Scrapbook() {
 
             {/* Teks bawah (fixed di bawah) */}
             <div className="animated-item px-4 absolute bottom-10 w-full flex justify-center">
-              <p className="text-center">
+              <p className="text-center font-serif text-md">
                 Bagi dunia kamu mungkin satu orang, tapi bagi satu orang, kamu
                 adalah dunia.
               </p>
@@ -636,8 +633,8 @@ function Scrapbook() {
             <div className="flex flex-col items-center justify-center gap-8 h-full p-2">
               <div className="grid grid-cols-2 gap-6 text-center w-full mt-5">
                 <p className="animated-item text-lg font-serif -translate-y-28">
-                  Turunin ego dan jangan malu untuk meminta maaf, kalau kamu
-                  salah, coba untuk meminta maaf dengan tulus sama aku
+                  Kalau kamu salah, turunin ego dulu ya. Nggak perlu gengsi atau
+                  malu buat minta maaf.
                 </p>
                 <p className="animated-item text-lg font-serif -translate-y-16">
                   Saling hargain satu sama lain, saling dukung satu sama lain,
@@ -724,12 +721,12 @@ function Scrapbook() {
             <img
               src="/images/bunga-lima.png"
               alt="bunga"
-              className="animated-item absolute bottom-0 translate-y-15 -left-16 -rotate-14 overflow-hidden"
+              className="animated-item absolute -bottom-10 -left-16 -rotate-14 overflow-hidden"
             />
             <img
               src="/images/bunga-enam.png"
               alt="bunga"
-              className="animated-item absolute top-5 right-0"
+              className="animated-item absolute top-5 right-0 "
             />
           </div>
 
@@ -801,7 +798,7 @@ function Scrapbook() {
               <div className="rounded-full border-[16px] border-[#4b2e2e]">
                 <div className="rounded-full border-[14px] border-[#a9745b]">
                   <img
-                    src="/images/R-7.jpg"
+                    src="/images/R-5.jpg"
                     alt="image"
                     className="animated-item w-52 h-52 rounded-full object-cover"
                   />
