@@ -265,7 +265,7 @@ function Scrapbook() {
           {/* Halaman 3 */}
           <div className="page flex items-center justify-center p-4 bg-[#f5e7d8]">
             <div className="flex flex-col justify-center items-center h-full space-y-4">
-              <h1 className="animated-item text-3xl font-serif font-bold text-center">
+              <h1 className="animated-item text-6xl font-header font-bold text-center">
                 My wish for u
               </h1>
               <p className="animated-item text-md text-center font-serif">
@@ -796,9 +796,9 @@ function Scrapbook() {
               <div className="rounded-full border-[16px] border-[#4b2e2e]">
                 <div className="rounded-full border-[14px] border-[#a9745b]">
                   <img
-                    src="/images/R-5.jpg"
+                    src="/images/R-9.jpg"
                     alt="image"
-                    className="animated-item w-52 h-52 rounded-full object-cover"
+                    className="animated-item w-52 h-52 rounded-full object-cover object-center"
                   />
                 </div>
               </div>
