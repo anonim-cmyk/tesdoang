@@ -538,7 +538,7 @@ function Scrapbook() {
                   bangga sama perjalananmu, terutama sama cara kamu bertahan dan
                   tetap berproses. Semoga tahun-tahun ke depan kamu lewati
                   dengan baik, banyak hal baik dan kejutan baru. Kamu layak
-                  dapat semua itu, tanpa batas.
+                  dapat semua itu.
                 </p>
               </div>
             </div>
