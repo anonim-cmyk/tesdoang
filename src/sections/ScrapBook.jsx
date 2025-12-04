@@ -113,7 +113,7 @@ function Scrapbook() {
             onClick={startExperience}
             className="px-6 py-3 bg-amber-900 text-white text-xl rounded-lg shadow-lg"
           >
-            Play With Song
+            Play With Music
           </button>
         </div>
       )}
@@ -861,6 +861,33 @@ function Scrapbook() {
           </div>
 
           {/* Halaman 21 */}
+
+          <div className="page bg-[#f5e7d8] overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center gap-6 h-full">
+              <h1 className="animated-item font-header text-6xl font-bold text-[#4b2e2e]">
+                I
+              </h1>
+
+              {/* Bingkai polaroid */}
+              <div className="bg-white p-4 pb-16 shadow-2xl -rotate-2">
+                <div className="border-4 border-[#4b2e2e]">
+                  <div className="border-2 border-[#a9745b]">
+                    <img
+                      src="/images/K-1.jpg"
+                      alt="Kucing dengan bulu berbentuk love"
+                      className="animated-item w-52 h-52 object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <h1 className="animated-item font-header text-6xl font-bold text-[#4b2e2e]">
+                You
+              </h1>
+            </div>
+          </div>
+
+          {/* Halaman 22 */}
           <div className="page bg-[#f5e7d8] relative overflow-hidden h-screen p-4">
             <img
               src="/images/birth-tirai.png"
